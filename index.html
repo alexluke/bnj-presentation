@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Magnolia, Thistle, Everlasting</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -17,9 +17,6 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -28,6 +25,11 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style>
+			.red { color: #834738; }
+			.green { color: #4d7e65; }
+		</style>
 	</head>
 
 	<body>
@@ -59,11 +61,17 @@
 						<p>Email-o-Tron</p>
 
 						<aside class="notes">
-							<ul>
-								<li>WebProfiler: not so much automation, required a developer.</li>
-								<li>MyRegistrationForm: A never-released project that allowed users to create webforms and landing pages by picking a templated.</li>
-								<li>RMS: Response Management System. The MyRegForm front end layered on top of the WebProfiler framework. Originally built for BMC. It was easy to use for simple welcome &raquo; reg &raquo; thanks workflow. Harder for developers to make custom sites. Very templated.</li>
-							</ul>
+							<p>WebProfiler: not so much automation, required a developer.</p>
+							<p>MyRegistrationForm: A never-released project that allowed users to create webforms and landing pages by picking a templated.</p>
+							<p>RMS: Response Management System. The MyRegForm front end layered on top of the WebProfiler framework. Originally built for BMC. It was easy to use for simple welcome &raquo; reg &raquo; thanks workflow. Harder for developers to make custom sites. Very strict templating.</p>
+							<p>Email-o-Tron: Original name for Magnolia</p>
+						</aside>
+					</section>
+
+					<section>
+						<img src="img/emailotron.png">
+						<aside class="notes">
+							The original Emailotron header.
 						</aside>
 					</section>
 				</section>
@@ -79,8 +87,18 @@
 					</section>
 
 					<section>
-						<p>Fully customized PURLs</p>
-						<p>No restrictions on HTML or design</p>
+						<a href="http://xerox.magnolia.internal.bnj.net/al/versions/copydeck/85/B" target="_blank"><img src="img/magnolia.png"></a>
+					</section>
+
+					<section>
+						<ul>
+							<li>Fully customized PURLs</li>
+							<li>No restrictions on HTML or design</li>
+						</ul>
+
+						<aside class="notes">
+							No technical restrictions on PURLs, but that doesn't mean that any purl should be used.
+						</aside>
 					</section>
 				</section>
 
@@ -91,16 +109,48 @@
 					</section>
 
 					<section>
-						<p>Tracking at contact, touch and response level</p>
-						<p>Email and Direct Mail campaigns</p>
-						<p>Lead distribution in any format and schedule</p>
-						<p>Can push leads into any system</p>
+						<img src="img/thistle.png">
+					</section>
+
+					<section>
+						<ul>
+							<li>Tracking at contact, touch and response level</li>
+							<li>Email, Direct Mail and Media campaigns</li>
+							<li>Lead distribution in any format and schedule</li>
+							<li>Can push leads into any system</li>
+						</ul>
+
+						<aside class="notes">
+							<p>Lots of data is collected that doesn't get reported on.</p>
+							<p>Previous integrations: Marketo, Eloqua, Salesforce, Siebel, Aprimo, WebEx, &hellip;</p>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Recent features</h2>
+						<ul>
+							<li>Actual email sent numbers</li>
+							<li>Unsubscribes by touch</li>
+							<li>Direct Mail returns</li>
+						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h1>Everlasting</h1>
-					<p>The reporting dashboard</p>
+					<section>
+						<h1>Everlasting</h1>
+						<p>The reporting dashboard</p>
+					</section>
+
+					<section>
+						<img src="img/everlasting.png">
+
+						<aside class="notes">
+							<p>High level dashboard, not meant for deep introspection of data.</p>
+							<p>Reports are once an hour</p>
+							<p>We have tons mode data in Thistle if you want to see more.</p>
+						</aside>
+					</section>
 				</section>
 
 				<section>
@@ -109,8 +159,48 @@
 				</section>
 
 				<section>
-					<h1>So why shouldn't we just use Marketo?</h1>
-					<h2>or Eloqua?</h2>
+					<section>
+						<h1>So why shouldn't we just use Marketo?</h1>
+						<h2>or Eloqua?</h2>
+
+						<aside class="notes">
+							These tools don't need to be in competition. Our stack is generally easier to set up without any complicated service agreements.
+							We're generally easier and more customizable for super complicated sites.
+						</aside>
+					</section>
+
+					<section>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>BNJ</th>
+									<th>Marketo</th>
+									<th>Eloqua</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Emails</th>
+									<td class="green">&#x2714;</td>
+									<td class="green">&#x2714;</td>
+									<td class="green">&#x2714;</td>
+								</tr>
+								<tr>
+									<th>Landing Pages</th>
+									<td class="green">&#x2714;</td>
+									<td class="green">&#x2714;</td>
+									<td class="green">&#x2714;</td>
+								</tr>
+								<tr>
+									<th>Customizable PURLs</th>
+									<td class="green">&#x2714;</td>
+									<td class="red">&#x2718;</td>
+									<td class="red">&#x2718;</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
 				</section>
 
 				<section>
