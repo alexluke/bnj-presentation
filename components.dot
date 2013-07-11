@@ -1,0 +1,14 @@
+digraph components {
+	size="10,10!"
+	node [shape=box color=dodgerblue3 penwidth=1 fontcolor=dodgerblue3]
+	edge [color=gray57]
+
+	magnolia [label="Magnolia"]
+	thistle [label="Thistle"]
+	everlasting [label="Everlasting"]
+	dandelion [label="Dandelion"]
+
+	magnolia -> thistle
+	thistle -> {magnolia everlasting dandelion}
+	dandelion -> {thistle magnolia}
+}
