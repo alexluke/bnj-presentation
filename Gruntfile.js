@@ -129,4 +129,15 @@ module.exports = function(grunt) {
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
 
+	grunt.registerTask( 'script', 'Render the script to a pdf', function( target ) {
+		var child = grunt.util.spawn({
+			cmd: 'pandoc',
+			args: [ 'script.md', '-o', 'script.pdf' ]
+		}, function( err, result, code) {
+			grunt.fatal( 'Unable to render script' );
+		});
+		child.stdout.pipe( process.stdout );
+		child.stderr.pipe( process.stderr );
+	});
+
 };
