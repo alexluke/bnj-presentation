@@ -1,4 +1,6 @@
 digraph components {
+	label="Our Platform"
+	labelloc=top
 	size="10,10!"
 	node [shape=box color=dodgerblue3 penwidth=1 fontcolor=dodgerblue3]
 	edge [color=gray57]
