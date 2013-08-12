@@ -1,9 +1,10 @@
-# Magnolia, Thistle, Everlasting
+# The BNJ Garden
 
 Today I'm going to talk about the tools that we've developed in-house for
 building websites and emails. These make up the "BNJ garden" because they're
 all named after flowers. We've had a history of bad naming decisions in the
-past, so we decided to pick generic names with a theme.
+paste, such as Spaminator, Email-o-Tron and Asset Face, so we decided to pick
+generic names with a theme.
 
 First I'm going to go through a little bit of history.
 
@@ -29,7 +30,8 @@ landing page builder with our WebProfiler system to create the Response
 Management System. The RMS was great for building sites that had a simple
 landing page to registration form to thanks page flow, which was most of the
 sites we were doing at the time. For super customized sites it was hard to get
-around the strict templating that was in place.
+around the strict templating that was in place. This is the same problem we're
+facing now with Marketo. We're 3 or 4 years ahead of the curve.
 
 Then in 2010 we decided to rebuild our entire infrastructure and started on the
 Email-o-tron. This was later renamed to Magnolia for the reasons I mentioned
@@ -82,8 +84,9 @@ And here's a rendered preview of this email.
 
     [Demo: Close preview]
 
-You can also set these blocks to render from markdown or textile instead of
-HTML, which can make it easier for non-developers to edit.
+You can also set these blocks to render from markdown or textile, which are
+alternative markup languages that instead of can make it easier for
+non-developers to edit.
 
 ## Features
 
@@ -114,14 +117,15 @@ media campaign. A response happens when someone responds to one of those
 touches.
 
 The Thistle database can track every event someone does on a page or email,
-even if we aren't showing it on the dashboard. We can go go in and pull reports
-as needed.
+even if we aren't showing it on the dashboard. We can go in and pull reports
+as needed. If anyone is interesting in the other types of data we have, please
+let us know.
 
 Leads can be distributed out of Thistle in any format and on any schedule. Most
 commonly we send out a daily spreadsheet during a campaign, but we can also
 send an email to a specific sales rep as soon as someone responds.
 
-We can also pushes leads into any system that can accept them. We've integrated
+We can also intergrate into any system that can accept them. We've integrated
 with Marketo, Eloqua, Salesforce, Siebel, Aprimo, Webex and I'm sure many more.
 
 ## Recent Features
@@ -129,17 +133,17 @@ with Marketo, Eloqua, Salesforce, Siebel, Aprimo, Webex and I'm sure many more.
 Here's some features that we've rolled out recently that we should start
 leveraging on new campaigns.
 
-Previously we didn't actually store an event for sending an email. Our
-impression counts were based off of how many people we were sending to minus
-the number of bounces. With our new email vendor, we're now storing exactly
-when an email actually gets sent, so we have more accurate numbers. That way
-we can fact in last chance suppressions and other details.
+Previously we didn't store a specific event for sending an email. Our impression
+counts were based off of how many people we were sending to with the bounces
+removed. With our new email vendor, we're now storing when an email actually
+gets sent, so we have more data to work with. Now we can factor in last chance
+suppressions and anything else that causes an email to not be sent.
 
 We're now also storing unsubscribes down to the touch that they happened on.
 This allows us to determine unsubscribe rates by the touch and see if there's
 something about a specific email that's driving more unsubscribes than usual.
 
-The last new features is better handling of direct mail events, specficially
+The final new features is better handling of direct mail events, specficially
 returns. Historically Thistle has been a very email based system, but this
 change will allow us to have been insight into the performance of direct mail
 campaigns.
@@ -194,14 +198,22 @@ their response data.
 
 # So why shouldn't we just use Marketo?
 
-So why shouldn't we just use a MAP like Marketo or Eloqua? These tools don't
-need to be an either/or choice. Sometimes it may make sense to use a commercial
-marketing automation platform. However our stack is generally easier to get set
-up for a quick campaign, and then maybe we can switch to Marketo once the user
-agreement has been signed.
+So why shouldn't we just use a MAP like Marketo or Eloqua? I want to first
+point out that we're a technology and platform agnostic agency. Sure we have
+our preferences, but in the end we're very flexible. We need to pick the right
+tool for the job.
+
+Sometimes it may make sense to use a commercial marketing automation platform.
+However our stack is generally easier to get set up for a quick campaign, and
+then maybe we can switch to Marketo once the client gets everything together.
+We can easily integrate our stack into Marketo, and we do that on a lot of our
+targeted accounts campaigns.
 
 Marketo and Eloqua do fill their niche, as long as you use them as they're
 intended. But sometimes once you get too complicated, they become limiting.
+Some projects fit very well into the MAP mold, but others have a larger
+creative vision that would be reduced if you're forced to strictly use a MAP.
+Again, our tools integrate very well with other systems.
 
 ## Comparison
 
