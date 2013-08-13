@@ -96,8 +96,7 @@ better than others. Hopefully Ben's PURL presentation has enlightened you.
 
 There also aren't any restrictions on the sort of HTML you can use. At the end
 of the day these pages end up as regular HTML when they're rendered. So we can
-use responsive design, web fonts, even the glorious blink tag if you really
-want.
+use responsive design, web fonts or whatever you want.
 
 # Thistle
 
